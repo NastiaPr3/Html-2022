@@ -1,0 +1,29 @@
+body {
+    background: #d59538;
+}
+
+h1 {
+    background: #1b5715;
+    color: bisque;
+}
+
+h2 {
+    background: #42793a;
+    color: bisque;
+}
+
+a {
+    background: #11440a;
+    color: bisque;
+}
+
+p {
+    background: rgba(145, 218, 133, 0.77);
+    color: bisque;
+    text-align: center;
+}
+
+ul {
+    background: rgb(96, 136, 98);
+    color: bisque;
+}
