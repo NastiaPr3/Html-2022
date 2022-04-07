@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    height: 400px;
+    background: #112c3f;
+    margin-top: 80px;
+}
+
+.blocks {
+    width: 400px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -319px ;
+    left: 575px;
+
+
+
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background: silver;
+    margin-right: 10px;
+
+    box-sizing: border-box;
+    border-radius: 8px;
+
+
+}
