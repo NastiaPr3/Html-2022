@@ -4,5 +4,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="ef91d239d0" level="application" />
+    <orderEntry type="library" name="51c6e829ce" level="application" />
   </component>
 </module>
