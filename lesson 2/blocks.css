@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big_block {
+    width: 800px;
+    height: 450px;
+    background: #a3a3a0;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.smaller_block {
+    width: 700px;
+    height: 100px;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small_block {
+    width: 340px;
+    height: 100px;
+    background: aliceblue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+}
+
+.fa-campground, .fa-caravan, .fa-frog, .fa-map, .fa-map-location-dot, .fa-mountain-sun {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    color: #847b7b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-text {
+    width: 240px;
+    height: 100px;
+}
+
+.title {
+    font-size: 17px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #423f3f;
+}
+
+.txt {
+    color: #847b7b;
+}

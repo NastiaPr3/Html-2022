@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big_block {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    width: 100%;
+    height: 50px;
+    background: #312f2f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second {
+    width: 100%;
+    height: 485px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.one_one {
+    width: 200px;
+    height: 485px;
+    margin-right: 5px;
+}
+
+.one_one_one {
+    width: 200px;
+    height: 185px;
+    background: #797474;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.two_two_two {
+    width: 200px;
+    height: 295px;
+    background: #797474;
+
+    display: flex;
+    justify-content: center;
+}
+
+.two_two {
+    width: 295px;
+    height: 485px;
+}
+
+.on_on {
+    width: 295px;
+    height: 380px;
+    background: #797474;
+    margin-bottom: 5px;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.text {
+    color: white;
+    line-height: 20px;
+}
+
+.tw_tw {
+    width: 295px;
+    height: 100px;
+    background: #797474;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.third {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+
+    display: flex;
+}
+
+.one {
+    width: 300px;
+    height: 100px;
+    background: #797474;
+    margin-right: 5px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.two {
+    width: 200px;
+    height: 100px;
+    background: #797474;
+
+    display: flex;
+    justify-content: center;
+}
+.fourth {
+    width: 100%;
+    height: 50px;
+    background: #312f2f;
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt {
+    color: white;
+    text-transform: uppercase;
+}
+
+.second > .one_one > .one_one_one > .txt {
+    margin-top: 15px;
+}
+
+.second > .one_one > .two_two_two > .txt {
+    margin-top: 15px;
+}
+
+.second > .two_two > .on_on > .txt {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.second > .two_two > .tw_tw > .txt {
+    margin-top: 15px;
+}
+
+.third > .one > .txt {
+    margin-top: 15px;
+}
+
+.third > .two > .txt {
+    margin-top: 15px;
+}
+
