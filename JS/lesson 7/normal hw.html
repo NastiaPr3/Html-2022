@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+    // створити пустий масив, наповнити його 10 об'єктами new User(....)
+    // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати, залишивши тільки об'єкти з парними id (filter)
+    // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+
+
+    // function User (id, name, surname, email, phone) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.surname = surname;
+    //     this.email = email;
+    //     this.phone = phone;
+    // }
+    //
+    // let arr = [];
+    // const user1 = new User(1, 'Vasya', 'Abram', 'vasya@.com', '123456789');
+    // const user2 = new User(2, 'Olya', 'asdf', 'Olya@.com', '7305720573');
+    // const user3 = new User(3, 'Oleg', 'Abrjfjjfjam', 'Oleg@.com', '036592832');
+    // const user4 = new User(4, 'Dana', 'fklbd', 'Dana@.com', '7205710567');
+    // const user5 = new User(5, 'Vitor', 'pinr', 'Vitor@.com', '3954249445');
+    //
+    // arr = [user1,user2,user3,user4,user5];
+    // console.log(arr);
+    // let users = arr.filter(value => value.id % 2 === 0);
+    // console.log(users);
+    // let usersU = arr.sort((a,b) => a.id - b.id);
+    // console.log(usersU);
+
+    // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+    // створити пустий масив, наповнити його 10 об'єктами Client
+    // // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+
+    // class Client {
+    //         constructor(id, name, surname, email, phone, order) {
+    //             this.id = id;
+    //             this.name = name;
+    //             this.surname = surname;
+    //             this.email = email;
+    //             this.phone = phone;
+    //             this.order = order
+    //         }
+    //     }
+    //     let arr = [];
+    //     const user1 = new Client(1, 'Vasya', 'Abram', 'vasya@.com', '123456789', ['apple']);
+    //     const user2 = new Client(2, 'Olya', 'asdf', 'Olya@.com', '7305720573', ['bagel', 'croisans', 'orange']);
+    //     const user3 = new Client(3, 'Oleg', 'Abrjfjjfjam', 'Oleg@.com', '036592832', ['milk', 'water']);
+    //     const user4 = new Client(4, 'Dana', 'fklbd', 'Dana@.com', '7205710567', ['tea', 'coffee', 'juice', 'fresh', 'water']);
+    //     const user5 = new Client(5, 'Vitor', 'pinr', 'Vitor@.com', '3954249445', ['banana']);
+    //
+    //     arr = [user1,user2,user3,user4,user5];
+    //     let clients = arr.sort((a,b) => a.order.length - b.order.length);
+    //     console.log(clients);
+    
+    
+    
+    // function Car(model, producer, year, maxSpeed, engineSize) {
+    //     this.model = model;
+    //     this.producer = producer;
+    //     this.year = year;
+    //     this.maxSpeed = maxSpeed;
+    //     this.engineSize = engineSize;
+    //     this.drive = function () {
+    //         console.log(`Їдемо зі швидкістю ${this.maxSpeed} на годину`);
+    //     };
+    //     this.info = function (){
+    //         for (const item in this) {
+    //             console.log(`${item} - ${this[item]}`);
+    //             //     ключ      значення
+    //         }
+    //     }
+    //     this.increaseMaxSpeed = function (newSpeed) {
+    //         this.maxSpeed += newSpeed;
+    //     }
+    //     this.changeYear = function (newYear){
+    //         this.year = newYear;
+    //     }
+    //     this.addDriver = function(driver) {
+    //         this.driver = driver;
+    //     }
+    // }
+    //
+    // const car1 = new Car('A', 'BMW', '2000', 300, 60);
+    //
+    // car1.drive();
+    // car1.info();
+    // car1.increaseMaxSpeed(50);
+    // car1.changeYear(2022);
+    // car1.addDriver('Vasya');
+    // console.log(car1);
+
+
+    class Car{
+        constructor (model, producer, year, maxSpeed, engineSize) {
+            this.model = model;
+            this.producer = producer;
+            this.year = year;
+            this.maxSpeed = maxSpeed;
+            this.engineSize = engineSize;
+    }
+
+        drive () {
+            console.log(`Їдемо зі швидкістю ${this.maxSpeed} на годину`);
+        };
+        info () {
+            for (const item in this) {
+                console.log(`${item} - ${this[item]}`);
+                //             ключ      значення
+            }
+        }
+        increaseMaxSpeed (newSpeed) {
+            this.maxSpeed += newSpeed;
+        }
+        changeYear (newYear){
+            this.year = newYear;
+        }
+        addDriver (driver) {
+            this.driver = driver;
+        }
+    }
+
+    const car1 = new Car('A', 'BMW', '2000', 300, 60);
+
+    car1.drive();
+    car1.info();
+    car1.increaseMaxSpeed(50);
+    car1.changeYear(2022);
+    car1.addDriver({name: 'Vasya', age: 35});
+    console.log(car1);
+
+
+    // function Cinderella(name, age, footSize) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.footsize = footSize;
+    // }
+    // let arrCinderella = [
+    //     new Cinderella('Natasha', 22, 36),
+    //     new Cinderella('Masha', 23, 37),
+    //     new Cinderella('Sveta', 60, 45)
+    // ];
+    //
+    // function Prince(name, age, findSize) {
+    //     this.name = name;
+    //     this.age = age;
+    //     this.findSize = findSize;
+    // }
+    //
+    // let newPrince = new Prince('Vasya', 30, 36);
+    //
+    // let find = (arrCin, prince) => {
+    //     for (const item of arrCin) {
+    //         if (item.footsize === prince.findSize){
+    //             return `${item.name}`
+    //         }
+    //     }
+    // }
+    //
+    // console.log(find(arrCinderella, newPrince));
+    //
+    // let cind = arrCinderella.find(value => value.footsize === newPrince.findSize)
+    // console.log(cind);
+
+</script>
+
+</body>
+</html>
