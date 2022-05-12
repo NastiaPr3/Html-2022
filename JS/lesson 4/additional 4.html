@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+
+    // let minNumber = (...arr) => {
+    //     let min = arr[0];
+    //     for (let item of arr) {
+    //         if (item < min) {
+    //             min = item;
+    //         }
+    //     }
+    //     return min;
+    // }
+    //
+    // console.log(minNumber(1, 2, -5, -4, 22, -102));
+
+    // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+
+    // let maxNumber = (...arr) => {
+    //     let max = arr[0];
+    //     for (let item of arr) {
+    //         if (item > max) {
+    //             max = item;
+    //         }
+    //     }
+    //     return max;
+    // }
+    //
+    // console.log(maxNumber(1, 2, -5, -4, 22, -102));
+
+
+    // - створити функцію яка повертає найбільше число з масиву
+
+    // let fn = (array) => {
+    //     for (let item of array) {
+    //         if (item > array[0]) {
+    //             array[0] = item;
+    //         }
+    //     }
+    //     return array[0];
+    // }
+    //
+    // console.log(fn([1, 2, -5, -4, 22, -102]));
+
+    // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+    
+    // let arithmetic = (array) => {
+    //     let x = 0;
+    //     for (let item of array) {
+    //         x += item;
+    //     }
+    //     return x / array.length;
+    // }
+    //
+    // console.log(arithmetic([10, 20, 30]));
+
+    // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+    // let fn = (...arr) => {
+    //         let min = arr[0];
+    //         let max = arr[0];
+    //     for (let item of arr) {
+    //         if (item < min) {
+    //             min = item;
+    //         }
+    //         if (item > max) {
+    //             max = item;
+    //         }
+    //     }
+    //     return min;
+    //     console.log(max);
+    // }
+    //
+    // console.log(fn(1, 2, -5, -4, 22, -102));
+
+    // - створити функцію яка заповнює масив рандомними числами
+    // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+    // let array = [];
+    // let fn = (arr) => {
+    //     for (let i = 0; i < 20; i++) {
+    //         arr[i] = Math.round(Math.random()*100);
+    //     }
+    //     return arr;
+    // }
+    //
+    // console.log(fn(array));
+
+    // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+    // let arr = [];
+    // let random = (array, limit) => {
+    //     for (let i = 0; i < limit; i++) {
+    //         array[i] = Math.round(Math.random()*100);
+    //     }
+    //     return array;
+    // }
+    //
+    // console.log(random(arr, 50));
+
+    // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+    // let newArr = [];
+    // let fn = (array) => {
+    //     for (let i = array.length -1 ; i >= 0; i--) {
+    //         newArr.push(array[i]);
+    //     }
+    //     return newArr;
+    // }
+    //
+    // console.log(fn([1, 2, 3]));
+
+    // - створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує їх між собою.
+
+    // let fn = (array) => {
+    //     let one;
+    //     let two;
+    //     if (array.length === 1) {
+    //         one = array;
+    //         return one;
+    //     } else if (array.length === 2) {
+    //         let x = 0;
+    //         for (let item of array) {
+    //             x += item;
+    //         }
+    //        two = x;
+    //         // return two;
+    //         return `${array[0]}, ${array[1]}`
+    //     }
+    // }
+    //
+    // console.log(fn([22, 33]));
+
+    //
+    // - створити функцію  яка приймає два масиви та складає значення елементів з однаковими індексами та повертає новий результуючий масив.
+    //     EXAMPLE:
+    //     [1,2,3,4]
+    //     [2,3,4,5]
+    // результат
+    //     [3,5,7,9]
+    // let newArr = [];
+    // let fn = (arr1, arr2) => {
+    //     let a1 = arr1[0];
+    //     let a2 = arr2[0];
+    //     for (let i = 0, h = 0; i < arr1.length, h < arr2.length ; i++, h++) {
+    //        let sum = arr1[i] + arr2[h];
+    //        newArr.push(sum);
+    //     }
+    //     return newArr
+    // }
+    //
+    // console.log(fn([1, 2, 3, 4], [2, 3, 4, 5]));
+
+
+    //
+    // - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+    // EXAMPLE:
+    //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+
+    // let fn = (array) => array.forEach(function (item) {
+    //     console.log(Object.keys(item));
+    // });
+    //
+    // fn([{name: 'Dima', age: 13}, {model: 'Camry'}]);
+
+    //
+    //     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+    // EXAMPLE:
+    //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+
+    // let fn = (array) => array.forEach(function (item){
+    //     console.log(Object.values(item));
+    // });
+    //
+    // fn([{name: 'Dima', age: 13}, {model: 'Camry'}]);
+
+</script>
+
+</body>
+</html>
