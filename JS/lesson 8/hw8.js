@@ -1,13 +1,15 @@
 // - Напишіть код,  котрий :
 // -- отримує текст з параграфа з id "content"
 
-// const elem = document.getElementById('content');
-// console.log(elem);
+// const element = document.getElementById('content');
+// const text = element.innerText;
+// console.log(text);
 
 // -- отримує текст з блоку з id "rules"
 
 // const getEl = document.getElementById('rules');
-// console.log(getEl);
+// const txt = getEl.innerText;
+// console.log(txt);
 //
 // // -- замініть текст параграфа з id 'content' на будь-який інший
 //
@@ -150,7 +152,7 @@
 // }
 
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
- const para = document.querySelector(".text2")
-para.innerText = 'mar-2022';
+//  const para = document.querySelector(".text2")
+// para.innerText = 'mar-2022';
 
 
